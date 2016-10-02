@@ -10,53 +10,41 @@
   --h6: .75rem;
 
   /* 8, 16, 24, 32, 48, 64 */
-  --x1: .5rem;
-  --x2: 1rem;
-  --x3: 1.5rem;
-  --x4: 2rem;
-  --x4: 3rem;
-  --x5: 4rem;
+  --x1: .5em;
+  --x2: 1em;
+  --x3: 1.5em;
+  --x4: 2em;
+  --x4: 3em;
+  --x5: 4em;
+  --x6: 8em;
+  --x7: 16em;
 
   --mx: 36em;
 
-  --debug: rgba(0, 191, 255, .25);
+  --debug: rgba(0, 191, 255, .125);
 }
 
 @media screen and (min-width: 36em) {
   :root {
     --h1: 3rem;
-    color: tomato;
   }
 }
 
 @media screen and (min-width: 72em) {
   :root {
     --h1: 4rem;
+    --h2: 2rem;
   }
 }
-
-/*
- * Type scale
- * 3em
- * 2em
- * 1.5em
- * 1em
- *
- * Margins
- * 1em
- * 2em
- * 4em
- *
- * Measure
- * 40em ?
- */
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   line-height: 1.5;
   margin: 0;
   margin: 2em;
+}
 
+body {
   background-image:
     linear-gradient(transparent 7px, var(--debug) 8px),
     linear-gradient(90deg, transparent 7px, var(--debug) 8px);
@@ -64,10 +52,22 @@ body {
   background-position: left top;
   mix-blend-mode: multiply;
 }
-
-* { outline: 1px solid rgba(255, 0, 0, .25) }
-/*
+h1, h2, h3, h4, h5, h6,
+p, dl, ol, ul, blockquote {
+  background-color: rgba(191,255,255,.25)
+}
+/* Debugger
+* { outline: 1px solid rgba(255, 0, 0, .125) }
 */
+
+.debug-a {
+  color: navy;
+  mix-blend-mode: multiply;
+}
+.debug-b {
+  color: tomato;
+  mix-blend-mode: multiply;
+}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -80,6 +80,22 @@ p, dl, ol, ul, blockquote {
   margin-bottom: 1em;
 }
 
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid;
+  margin: 0;
+  margin-top: 2em;
+  margin-bottom: calc(2em - 1px);
+}
+
+pre, samp, code {}
+pre {}
+
 h1, .h1 { font-size: var(--h1) }
 h2, .h2 { font-size: var(--h2) }
 h3, .h3 { font-size: var(--h3) }
@@ -88,6 +104,12 @@ h5, .h5 { font-size: var(--h5) }
 h6, .h6 { font-size: var(--h6) }
 
 .mx { max-width: 36em }
+.mx { max-width: 32em }
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
 
 .m0  { margin: 0 }
 .mt0 { margin-top: 0 }
@@ -130,6 +152,8 @@ h6, .h6 { font-size: var(--h6) }
 .mr6 { margin-right: var(--x6) }
 .mb6 { margin-bottom: var(--x6) }
 .ml6 { margin-left: var(--x6) }
+
+.bold { font-weight: bold }
 
 .caps {
   text-transform: uppercase;
