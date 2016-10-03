@@ -3,7 +3,49 @@
 <title>Type System</title>
 <meta name='viewport' content='width=device-width,initial-scale=1'>
 <link rel='stylesheet' href='type-system.css'>
-<link rel='stylesheet' href='docs/base.css'>
+<style>
+* { box-sizing: border-box }
+:root {
+  --debug1: rgba(255, 191, 127, .125);
+  --debug2: rgba(0, 191, 255, .375);
+  --debug3: rgba(0, 127, 255, .875);
+  --debug4: rgba(255, 63, 0, .875);
+}
+a { color: #07c }
+a:hover { color: #08d }
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+}
+hr {
+  border: 0;
+  border-bottom: 1px solid;
+  margin: 0;
+  margin-top: 2em;
+  margin-bottom: calc(2em - 1px);
+}
+.bold { font-weight: bold }
+.bg-grid {
+  background-image:
+    linear-gradient(transparent 7px, var(--debug2) 8px, transparent 8px),
+    linear-gradient(transparent 15px, var(--debug2) 16px),
+    linear-gradient(90deg, transparent 15px, var(--debug2) 16px);
+  background-size: 16px 16px;
+  background-position: left top;
+  mix-blend-mode: multiply;
+}
+.bg-grid * {
+  outline: 1px solid rgba(255, 0, 0, .125);
+  background-color: var(--debug1);
+}
+.debug-b {
+  color: var(--debug4);
+  mix-blend-mode: multiply;
+}
+@media screen and (max-width: 32em) { .sm-hide { display: none } }
+@media screen and (min-width: 32em) and (max-width: 64em) { .md-hide { display: none } }
+@media screen and (min-width: 64em) { .lg-hide { display: none } }
+</style>
 <header>
   <h1 class='mt4'>Type System</h1>
   <p class='h2 bold mx'>
@@ -63,22 +105,22 @@
     <cite>– Robert Bringhurst</cite>
   </blockquote>
   <h2 class='h1 mx'>
-    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span>Lorem ipsum dolor sit amet, consectetur adip</span>
     <span class='debug-b'>isicing elit, sed do eiusmod </span>
     tempor incididunt ut labore et dolore magna aliqua.
   </h2>
   <p class='h2 mx'>
-    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span>Lorem ipsum dolor sit amet, consectetur adip</span>
     <span class='debug-b'>isicing elit, sed do eiusmod </span>
     tempor incididunt ut labore et dolore magna aliqua.
   </p>
   <p class='h3 mx'>
-    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span>Lorem ipsum dolor sit amet, consectetur adip</span>
     <span class='debug-b'>isicing elit, sed do eiusmod </span>
     tempor incididunt ut labore et dolore magna aliqua.
   </p>
   <p class='h4 mx'>
-    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span>Lorem ipsum dolor sit amet, consectetur adip</span>
     <span class='debug-b'>isicing elit, sed do eiusmod </span>
     tempor incididunt ut labore et dolore magna aliqua.
   </p>
