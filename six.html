@@ -6,13 +6,15 @@
   --debug2: rgba(0, 191, 255, .25);
 }
 .debug * {
-  /*
   outline: 1px solid var(--debug1)
-  */
+  /*
   color: var(--debug1);
   background-color: var(--debug2);
+  */
 }
+/*
 .debug-a { color: navy }
+*/
 .debug-b { color: tomato }
 .grid6 {
   background-image:
@@ -28,18 +30,23 @@
     linear-gradient(transparent 15px, var(--debug2) 16px),
     linear-gradient(90deg, transparent 15px, var(--debug2) 16px);
   background-size: 16px 16px;
-  background-position: left .2em top;
+  background-position: left top;
 }
 </style>
-<body class='grid8 debug'>
-  <h1 class='h0'>Hello 72/96</h1>
-  <h1 class=''>Hello 48/72</h1>
-  <h2 class=''>Hello 36/48</h2>
-  <h3 class=''>Hello 24/32</h3>
-  <h4 class=''>Hello 18/24</h4>
-  <h5 class=''>Hello 12/16 ???</h5>
+<body class=''>
+  <h1 class='h0'>0 Hello 72/96</h1>
+  <h1 class='h1'>1 Hello 48/72</h1>
+  <h2 class='h2'>2 Hello 36/48</h2>
+  <h3 class='h3'>3 Hello 24/32</h3>
+  <h4 class=''>4 Hello 18/24</h4>
+  <h5 class=''>5 Hello 12/16</h5>
 
-  <p class='h0 mx'>
+  <p class='h0 lh2 bold mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <p class='h0 bold mx'>
     <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
     <span class='debug-b'>isicing elit, sed do eiusmod </span>
     tempor incididunt ut labore et dolore magna aliqua.
@@ -77,17 +84,14 @@
   </p>
   <section id='space'>
     <h2>Margin tests</h2>
-    <div class='h5 mb1'>h5 m1</div>
-    <div class='h5 mb2'>h5 m2</div>
-    <div class='h5 mb3'>h5 m3</div>
-    <div class='h5 mb4'>h5 m4</div>
-    <!--
-      <div class='h4 mb1'>h4 m1</div>
-    -->
-    <div class='h4 mb2'>h4 m2</div>
-    <div class='h4 mb3'>h4 m3</div>
-    <div class='h4 mb4'>h4 m4</div>
+    <div class='h4 mb1'>m1</div>
+    <div class='h4 mb2'>m2</div>
+    <div class='h4 mb3'>m3</div>
+    <div class='h4 mb4'>m4</div>
+    <div class='h4 mb5'>m5</div>
+    <div class='h4 mb6'>m6</div>
 
+    <!--
     <div class='h3 mb1'>h3 m1</div>
     <div class='h3 mb2'>h3 m2</div>
     <div class='h3 mb3'>h3 m3</div>
@@ -107,6 +111,14 @@
     <div class='h0 mb2'>h0 m2</div>
     <div class='h0 mb3'>h0 m3</div>
     <div class='h0 mb4'>h0 m4</div>
+    -->
     <div class'h4'>end</div>
   </section>
+  <script>
+    const toggleGrid = () => {
+      document.body.classList.toggle('grid8')
+      document.body.classList.toggle('debug')
+    }
+    document.body.addEventListener('click', toggleGrid)
+  </script>
 </body>
