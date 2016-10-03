@@ -3,57 +3,105 @@
 <title>Type System</title>
 <meta name='viewport' content='width=device-width,initial-scale=1'>
 <link rel='stylesheet' href='type-system.css'>
-<h1>Type System</h1>
-<h2>Hello</h2>
-<h3>Hello</h3>
-<h4>Hello</h4>
-
-<hr class='h2 mx' />
-<h2>Measure</h2>
-<h2 class='h1 mx'>
-  <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
-  <span class='debug-b'>isicing elit, sed do eiusmod </span>
-  tempor incididunt ut labore et dolore magna aliqua.
-</h2>
-<p class='h2 mx'>
-  <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
-  <span class='debug-b'>isicing elit, sed do eiusmod </span>
-  tempor incididunt ut labore et dolore magna aliqua.
-</p>
-<p class='h3 mx'>
-  <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
-  <span class='debug-b'>isicing elit, sed do eiusmod </span>
-  tempor incididunt ut labore et dolore magna aliqua.
-</p>
-<p class='h4 mx'>
-  <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
-  <span class='debug-b'>isicing elit, sed do eiusmod </span>
-  tempor incididunt ut labore et dolore magna aliqua.
-</p>
-
-<p class='h3 mx'>
-Type system is a great all-around base stylesheet for beautiful, readable typesetting on the web.
-Following tried and true typographic principles in the spirit of Robert Bringhurst,
-this should help you create consistently great-looking designs.
-</p>
-<blockquote class='h3 mx'>
-  <p>
-    The simplest scale is a single note, and sticking with a single note draws more attention to other parameters, such as rhythm and inflection... In the sixteenth century, a series of common sizes developed among European typographers, and the series survived with little change and few additions for 400 years... This is the typographic equivalent of the diatonic scale.
+<link rel='stylesheet' href='docs/base.css'>
+<header>
+  <h1 class='mt4'>Type System</h1>
+  <p class='h2 bold mx'>
+    Combined duodecimal and hexidecimal type scale with pixel-perfect alignment and spacing
   </p>
-  <cite>– Robert Bringhurst</cite>
-</blockquote>
-<blockquote class='h3 mx'>
-  <p>
-    White space is to be regarded as an active element, not a passive background.
+  <p class='h3 mx'>
+    Type System is a general-purpose design system and stylesheet for beautiful, readable typesetting on the web. Following tried-and-true typographic principles and inspired by Robert Bringhurst, Type Systems offers smart defaults for consistently balanced hierarchy and effortless visual rhythm.
   </p>
-  <cite>– Jan Tschichold</cite>
-</blockquote>
-<blockquote class='h1 bold mx'>
-  <p>
-    Perfect is the enemy of good.
-  </p>
-</blockquote>
+</header>
 
-<div class='btn mr1 bg-tomato'>Hello</div>
-<div class='btn bg-tomato'>Hello</div>
-<a href='supernormal.html'>Supernormal Web Design</a>
+<section id='type-scale' class='mt4 mb4'>
+  <h2>Type Scale</h2>
+  <p>Using CSS custom properties, the type scale offers greater contrast at larger viewport widths.</p>
+  <blockquote>
+    <p class='h2 bold mx'>
+      The simplest scale is a single note, and sticking with a single note draws more attention to other parameters, such as rhythm and inflection... In the sixteenth century, a series of common sizes developed among European typographers, and the series survived with little change and few additions for 400 years... This is the typographic equivalent of the diatonic scale.
+    </p>
+    <cite>– Robert Bringhurst</cite>
+  </blockquote>
+  <h2 class='h1 mt2'>
+    Hello
+    <span class='md-hide lg-hide'>32px</span>
+    <span class='sm-hide lg-hide'>48px</span>
+    <span class='sm-hide md-hide'>64px</span>
+  </h2>
+  <h2>
+    Hello
+    <span class='lg-hide'>24px</span>
+    <span class='sm-hide md-hide'>32px</span>
+  </h2>
+  <h3>Hello 24px</h3>
+  <h4>Hello 16px</h4>
+  <h5>Hello 12px</h5>
+</section>
+
+<section id='space-scale' class='mt4 mb4'>
+  <h2>Space Scale</h2>
+  <p>
+    Using an em-based scale, margins are derived from the core typescale and always align to an 8px baseline grid.
+  </p>
+  <blockquote>
+    <p class='h1 bold mx mb1'>
+      White space is to be regarded as an active element, not a passive background.
+    </p>
+    <cite>– Jan Tschichold</cite>
+  </blockquote>
+</section>
+
+<section id='measure' class='mt4 mb4'>
+  <h2>Measure</h2>
+  <p>Using 32em as the max-width ensures line lengths never exceed roughly 66 characters, staying within the widely-regarded range of 45 – 75 characters.
+  </p>
+  <blockquote>
+    <p class='h2 bold mx'>
+      Anything from 45 to 75 characters is widely regarded as a satisfactory length of line for a single-column page set in a serifed text face in a text size. The 66-character line (counting both letters and spaces) is widely regarded as ideal.
+    </p>
+    <cite>– Robert Bringhurst</cite>
+  </blockquote>
+  <h2 class='h1 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </h2>
+  <p class='h2 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <p class='h3 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <p class='h4 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</section>
+
+<section id='quotes' class='mt4 mb4'>
+  <blockquote>
+    <p class='h1 bold mx mb1'>
+      Perfect is the enemy of good.
+    </p>
+    <cite>– Proverb</cite>
+  </blockquote>
+</section>
+
+<p>
+  <a href='http://jxnblk.com' class='mr1'>Made by Jxnblk</a>
+  <a href='https://github.com/jxnblk/type-system'>GitHub</a>
+</p>
+
+<script>
+const body = document.body
+const toggleGrid = () => {
+  body.classList.toggle('bg-grid')
+}
+body.addEventListener('click', toggleGrid)
+</script>

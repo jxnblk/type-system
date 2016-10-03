@@ -1,0 +1,23 @@
+{
+  "name": "type-system",
+  "version": "1.0.0-beta.1",
+  "description": "Combined duodecimal and hexidecimal type scale with pixel-perfect alignment and spacing",
+  "main": "type-system.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jxnblk/type-system.git"
+  },
+  "keywords": [
+    "typography",
+    "design",
+    "design-system",
+    "css",
+    "style"
+  ],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jxnblk/type-system/issues"
+  },
+  "homepage": "https://github.com/jxnblk/type-system#readme"
+}
