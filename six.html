@@ -5,7 +5,13 @@
   --debug1: rgba(255, 63, 0, .5);
   --debug2: rgba(0, 191, 255, .25);
 }
-.debug * { outline: 1px solid var(--debug1) }
+.debug * {
+  /*
+  outline: 1px solid var(--debug1)
+  */
+  color: var(--debug1);
+  background-color: var(--debug2);
+}
 .debug-a { color: navy }
 .debug-b { color: tomato }
 .grid6 {
@@ -69,4 +75,38 @@
     <span class='debug-b'>isicing elit, sed do eiusmod </span>
     tempor incididunt ut labore et dolore magna aliqua.
   </p>
+  <section id='space'>
+    <h2>Margin tests</h2>
+    <div class='h5 mb1'>h5 m1</div>
+    <div class='h5 mb2'>h5 m2</div>
+    <div class='h5 mb3'>h5 m3</div>
+    <div class='h5 mb4'>h5 m4</div>
+    <!--
+      <div class='h4 mb1'>h4 m1</div>
+    -->
+    <div class='h4 mb2'>h4 m2</div>
+    <div class='h4 mb3'>h4 m3</div>
+    <div class='h4 mb4'>h4 m4</div>
+
+    <div class='h3 mb1'>h3 m1</div>
+    <div class='h3 mb2'>h3 m2</div>
+    <div class='h3 mb3'>h3 m3</div>
+    <div class='h3 mb4'>h3 m4</div>
+
+    <div class='h2 mb1'>h2 m1</div>
+    <div class='h2 mb2'>h2 m2</div>
+    <div class='h2 mb3'>h2 m3</div>
+    <div class='h2 mb4'>h2 m4</div>
+
+    <div class='h1 mb1'>h1 m1</div>
+    <div class='h1 mb2'>h1 m2</div>
+    <div class='h1 mb3'>h1 m3</div>
+    <div class='h1 mb4'>h1 m4</div>
+
+    <div class='h0 mb1'>h0 m1</div>
+    <div class='h0 mb2'>h0 m2</div>
+    <div class='h0 mb3'>h0 m3</div>
+    <div class='h0 mb4'>h0 m4</div>
+    <div class'h4'>end</div>
+  </section>
 </body>

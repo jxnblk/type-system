@@ -7,11 +7,7 @@
   --h4: 1.125rem;
   --h5: .75rem;
 
-  --lh1: 1;
-    /* Doesn't conform to grid */
-    --lh2: calc(7/6); /* 1.25; */
-  --lh3: calc(4/3);
-    --lh4: calc(5/3); /* 1.5; */
+  --lh: calc(4/3);
 
   --mx: 32em;
 
@@ -21,9 +17,15 @@
   --m4: calc(16/3 * 1em);
 }
 
+.h4 {
+  /* to do: adjust this */
+  --m1: .5em;
+}
+
 body {
   font-family: -apple-system, sans-serif;
-  line-height: var(--lh3);
+  font-size: var(--h4);
+  line-height: var(--lh);
   margin: 0;
   margin: 2em;
 }
@@ -63,10 +65,7 @@ h5, h6  { font-size: var(--h5) }
 
 .mx { max-width: var(--mx) }
 
-.lh1 { line-height: var(--lh1) }
-.lh2 { line-height: var(--lh2) }
-.lh3 { line-height: var(--lh3) }
-.lh4 { line-height: var(--lh4) }
+.lh1 { line-height: 1 }
 
 .mt0 { margin-top:    0 }
 .mb0 { margin-bottom: 0 }
