@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<link rel='stylesheet' href='ts6.css'>
+<style>
+:root {
+  --debug1: rgba(255, 63, 0, .5);
+  --debug2: rgba(0, 191, 255, .25);
+}
+.debug * { outline: 1px solid var(--debug1) }
+.debug-a { color: navy }
+.debug-b { color: tomato }
+.grid6 {
+  background-image:
+    linear-gradient(transparent 5px, var(--debug2) 6px, transparent 7px),
+    linear-gradient(transparent 11px, var(--debug2) 12px),
+    linear-gradient(90deg, transparent 11px, var(--debug2) 12px);
+  background-size: 12px 12px;
+  background-position: left top;
+}
+.grid8 {
+  background-image:
+    linear-gradient(transparent 7px, var(--debug2) 8px, transparent 8px),
+    linear-gradient(transparent 15px, var(--debug2) 16px),
+    linear-gradient(90deg, transparent 15px, var(--debug2) 16px);
+  background-size: 16px 16px;
+  background-position: left .2em top;
+}
+</style>
+<body class='grid8 debug'>
+  <h1 class='h0'>Hello 72/96</h1>
+  <h1 class=''>Hello 48/72</h1>
+  <h2 class=''>Hello 36/48</h2>
+  <h3 class=''>Hello 24/32</h3>
+  <h4 class=''>Hello 18/24</h4>
+  <h5 class=''>Hello 12/16 ???</h5>
+
+  <p class='h0 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <p class='h1 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <p class='h2 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <p class='h3 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <p class='h4 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <p class='h5 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+
+  <p class='h4 mx'>
+    <span class='debug-a'>Lorem ipsum dolor sit amet, consectetur adip</span>
+    <span class='debug-b'>isicing elit, sed do eiusmod </span>
+    tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</body>
