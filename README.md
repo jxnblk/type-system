@@ -23,7 +23,7 @@ Using CSS custom properties, the type scale offers greater contrast at larger vi
 
 ## Space Scale
 
-Using an em-based scale, margins are derived from the core typescale and always align to an 8px baseline grid.
+Using an em-based scale, margins are derived from the core type scale and always align to an 8px baseline grid.
 
 1. 8px
 2. 16px
