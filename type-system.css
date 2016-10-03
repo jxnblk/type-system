@@ -8,27 +8,21 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h3, .h4, .h5, .h6 {
-  line-height: var(--lh1);
-}
-
-.h2 {
+p, dl, ol, ul, blockquote,
+.h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: var(--lh2);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: var(--lh1);
   margin-top: var(--x2);
   margin-bottom: 0;
 }
 
 p, dl, ol, ul, blockquote {
-  line-height: var(--lh2);
   margin-top: var(--x2);
   margin-bottom: var(--x2);
 }
 
-/* Type Scale */
 h1, .h1 { font-size: var(--h1) }
 h2, .h2 { font-size: var(--h2) }
 h3, .h3 { font-size: var(--h3) }
@@ -36,14 +30,11 @@ h4, .h4 { font-size: var(--h4) }
 h5, .h5 { font-size: var(--h5) }
 h6, .h6 { font-size: var(--h6) }
 
-/* Measure */
 .mx { max-width: var(--mx) }
 
-/* Line Height */
 .lh1 { line-height: var(--lh1) }
 .lh2 { line-height: var(--lh2) }
 
-/* Space */
 .m0  { margin:        0 }
 .mt0 { margin-top:    0 }
 .mr0 { margin-right:  0 }
@@ -81,17 +72,14 @@ h6, .h6 { font-size: var(--h6) }
   --h4: 1rem;
   --h5: .75rem;
   --h6: var(--h5);
-  /* Measure */
   --mx: 32em;
 }
 
 :root,
 .h1,
 .h4 {
-  /* Line Height */
   --lh1: 1;
   --lh2: 1.5;
-  /* Space */
   --x1: .5em;
   --x2: 1em;
   --x3: 2em;
@@ -106,10 +94,7 @@ h6,
 .h3,
 .h5,
 .h6 {
-  /* Line Height */
-  --lh1: calc(4/3);
-  --lh2: calc(5/3);
-  /* Space */
+  --lh2: calc(4/3);
   --x1: calc(2/3 * 1em);
   --x2: calc(4/3 * 1em);
   --x3: calc(8/3 * 1em);
@@ -134,7 +119,6 @@ h6,
 
   h2,
   .h2 {
-    --lh1: 1;
     --lh2: 1.5;
     --x1: .5em;
     --x2: 1em;
