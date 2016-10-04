@@ -60,7 +60,7 @@ h5, h6  { font-size: var(--h5) }
 .h5 { font-size: var(--h5) }
 .h6 { font-size: var(--h5) }
 
-@media screen and (min-width: 32em) {
+@media screen and (min-width: 40em) {
   .xh0 { font-size: var(--h0) }
   .xh1 { font-size: var(--h1) }
   .xh2 { font-size: var(--h2) }
@@ -69,8 +69,6 @@ h5, h6  { font-size: var(--h5) }
   .xh5 { font-size: var(--h5) }
   .xh6 { font-size: var(--h5) }
 }
-
-.mx { max-width: var(--mx) }
 
 .lh1 { line-height: 1 }
 /* h0, h1, h3 */
@@ -91,6 +89,8 @@ h5, h6  { font-size: var(--h5) }
 .mb5 { margin-bottom: var(--x5) }
 .mt6 { margin-top:    var(--x6) }
 .mb6 { margin-bottom: var(--x6) }
+
+.mx { max-width: var(--mx) }
 
 .bold { font-weight: bold }
 
