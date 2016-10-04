@@ -71,8 +71,9 @@ iframe {
 .mn2 { margin: -1rem }
 .bg-orange { background-color: var(--orange) }
 .mxb { color: var(--orange) }
+.debug,
 .debug * {
-  outline: 1px solid var(--orange);
+  outline: 1px solid var(--cyan);
   mix-blend-mode: multiply;
 }
 .grid8 {
@@ -97,9 +98,9 @@ iframe {
 }
 </style>
 <body class=''>
-  <header class='p2 mn2 relative debug grid8 bg-orange'>
-    <h1 class='h1 xh0 mt6'>Type System</h1>
-    <p class='h3 mt0 bold'>Typographic scale with pixel-perfect alignment</p>
+  <header class='p2 mn2 relative grid8 bg-orange'>
+    <h1 class='h1 xh0 mt6 debug'>Type System</h1>
+    <p class='h3 mt0 bold debug'>Typographic scale with pixel-perfect alignment</p>
     <div class='bottom-right'>
       <a href='https://twitter.com/share'
         class='twitter-share-button'
@@ -108,11 +109,11 @@ iframe {
         data-show-count='false'>Tweet</a>
     </div>
     <div class='top-right'>
-      <button>Toggle Grid</button>
+      <button class='h5'>Toggle Grid</button>
     </div>
   </header>
 
-  <p class='h2 bold mx mt4'>
+  <p class='h3 xh2 bold mx mt4'>
     Type System is a general-purpose design system and stylesheet for beautiful, readable typesetting on the web. Following tried-and-true typographic principles and inspired by Robert Bringhurst, Type Systems offers smart defaults for consistently balanced hierarchy and effortless visual rhythm.
   </p>
 
@@ -245,7 +246,7 @@ iframe {
   </section>
 
   <blockquote>
-    <p class='h1 bold mx mb2'>
+    <p class='h2 xh1 bold mx mb2'>
       “White space is to be regarded as an active element, not a passive background.”
     </p>
     <cite>
